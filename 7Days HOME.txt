@@ -404,7 +404,7 @@ charSelected.TextWrapped = true
 
 -- Scripts:
 
-local function LFYIIN_fake_script() -- ButtonMenu.LocalScript 
+local function YWGTLY_fake_script() -- ButtonMenu.LocalScript 
 	local script = Instance.new('LocalScript', ButtonMenu)
 
 	script.Parent.MenuButton.MouseButton1Click:Connect(function()
@@ -425,8 +425,8 @@ local function LFYIIN_fake_script() -- ButtonMenu.LocalScript
 		script.Parent.Parent.MiscMenu.Visible = true
 	end)
 end
-coroutine.wrap(LFYIIN_fake_script)()
-local function ZRHYUT_fake_script() -- less.LocalScript 
+coroutine.wrap(YWGTLY_fake_script)()
+local function CODES_fake_script() -- less.LocalScript 
 	local script = Instance.new('LocalScript', less)
 
 	local l = false
@@ -446,16 +446,16 @@ local function ZRHYUT_fake_script() -- less.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZRHYUT_fake_script)()
-local function SNGKO_fake_script() -- close.LocalScript 
+coroutine.wrap(CODES_fake_script)()
+local function SWGJD_fake_script() -- close.LocalScript 
 	local script = Instance.new('LocalScript', close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(SNGKO_fake_script)()
-local function NRNKZLU_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(SWGJD_fake_script)()
+local function VHREE_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Players = game:GetService("Players")
@@ -515,25 +515,25 @@ local function NRNKZLU_fake_script() -- TextButton.LocalScript
 	-- Connect button click
 	toggleButton.MouseButton1Click:Connect(toggleXP)
 end
-coroutine.wrap(NRNKZLU_fake_script)()
-local function SPAXZ_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(VHREE_fake_script)()
+local function PWGH_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		if workspace:FindFirstChild("helicopter"):FindFirstChild("rotor"):FindFirstChild("Sound") then
 			local sound = workspace:FindFirstChild("helicopter"):FindFirstChild("rotor"):FindFirstChild("Sound")
-			if sound.Volumen == 1 then
-				sound.Volumen = 0
+			if sound.Volume == 1 then
+				sound.Volume = 0
 				script.Parent.Text = "NORMAL HELICOPTER SOUND"
 			else
-				sound.Volumen = 1
+				sound.Volume = 1
 				script.Parent.Text = "MUTE HELICOPTER SOUND"
 			end
 		end
 	end)
 end
-coroutine.wrap(SPAXZ_fake_script)()
-local function IBLJVC_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(PWGH_fake_script)()
+local function LORXDO_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local changes = false
@@ -563,8 +563,8 @@ local function IBLJVC_fake_script() -- TextButton_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IBLJVC_fake_script)()
-local function KGNX_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(LORXDO_fake_script)()
+local function QIOVII_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local Players = game:GetService("Players")
@@ -680,22 +680,22 @@ local function KGNX_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KGNX_fake_script)()
-local function DILE_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(QIOVII_fake_script)()
+local function KIHP_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		if workspace:FindFirstChild("music") and workspace:FindFirstChild("music").Volumen == 0.5 then
-			workspace:FindFirstChild("music").Volumen = 0
+		if workspace:FindFirstChild("music") and workspace:FindFirstChild("music").Volume == 0.5 then
+			workspace:FindFirstChild("music").Volume = 0
 			script.Parent.Text = "NORMAL BACKGRAUND MUSIC"
 		else
-			workspace:FindFirstChild("music").Volumen = 0.5
+			workspace:FindFirstChild("music").Volume = 0.5
 			script.Parent.Text = "MUTE BACKGRAUND MUSIC"
 		end
 	end)
 end
-coroutine.wrap(DILE_fake_script)()
-local function XUGXI_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(KIHP_fake_script)()
+local function ZINHPER_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	local player = game.Players.LocalPlayer
@@ -741,8 +741,8 @@ local function XUGXI_fake_script() -- TextButton_6.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XUGXI_fake_script)()
-local function SXWK_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(ZINHPER_fake_script)()
+local function ILDMS_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	local oldtext = script.Parent.Text
@@ -757,8 +757,8 @@ local function SXWK_fake_script() -- TextButton_7.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SXWK_fake_script)()
-local function GMXKOLF_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(ILDMS_fake_script)()
+local function UEEUK_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	local Players = game:GetService("Players")
@@ -772,7 +772,7 @@ local function GMXKOLF_fake_script() -- TextButton_8.LocalScript
 	-- Path to the container
 	local container = player:WaitForChild("PlayerGui")
 		:WaitForChild("achievements")
-		:WaitForChild("Achievements")
+		:WaitForChild("Achivements")
 		:WaitForChild("Content")
 		:WaitForChild("Container")
 		:WaitForChild("Content")
@@ -813,8 +813,8 @@ local function GMXKOLF_fake_script() -- TextButton_8.LocalScript
 		})
 	end)
 end
-coroutine.wrap(GMXKOLF_fake_script)()
-local function XCUV_fake_script() -- Bar.UIDrag 
+coroutine.wrap(UEEUK_fake_script)()
+local function CNOWVOX_fake_script() -- Bar.UIDrag 
 	local script = Instance.new('LocalScript', Bar)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -855,8 +855,8 @@ local function XCUV_fake_script() -- Bar.UIDrag
 		end
 	end)
 end
-coroutine.wrap(XCUV_fake_script)()
-local function RGVIUN_fake_script() -- ScrollingFrame.LocalScript 
+coroutine.wrap(CNOWVOX_fake_script)()
+local function LWMVOCX_fake_script() -- ScrollingFrame.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame)
 
 	local UIlist = script.Parent.UIListLayout
@@ -876,8 +876,8 @@ local function RGVIUN_fake_script() -- ScrollingFrame.LocalScript
 	end
 	
 end
-coroutine.wrap(RGVIUN_fake_script)()
-local function BPFNVAF_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(LWMVOCX_fake_script)()
+local function TAYZY_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	local CharSelected = script.Parent.Parent.charSelected
@@ -916,8 +916,8 @@ local function BPFNVAF_fake_script() -- TextButton_9.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BPFNVAF_fake_script)()
-local function OSXJPMW_fake_script() -- Frame.UIDrag 
+coroutine.wrap(TAYZY_fake_script)()
+local function GFOQ_fake_script() -- Frame.UIDrag 
 	local script = Instance.new('LocalScript', Frame)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -958,4 +958,10 @@ local function OSXJPMW_fake_script() -- Frame.UIDrag
 		end
 	end)
 end
-coroutine.wrap(OSXJPMW_fake_script)()
+coroutine.wrap(GFOQ_fake_script)()
+local function CFDLMS_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	script.Parent.Bar.Position = UDim2.new(0.331, 2,0.064, -55)
+end
+coroutine.wrap(CFDLMS_fake_script)()
