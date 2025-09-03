@@ -404,7 +404,7 @@ charSelected.TextWrapped = true
 
 -- Scripts:
 
-local function YWGTLY_fake_script() -- ButtonMenu.LocalScript 
+local function PRLBZS_fake_script() -- ButtonMenu.LocalScript 
 	local script = Instance.new('LocalScript', ButtonMenu)
 
 	script.Parent.MenuButton.MouseButton1Click:Connect(function()
@@ -425,8 +425,8 @@ local function YWGTLY_fake_script() -- ButtonMenu.LocalScript
 		script.Parent.Parent.MiscMenu.Visible = true
 	end)
 end
-coroutine.wrap(YWGTLY_fake_script)()
-local function CODES_fake_script() -- less.LocalScript 
+coroutine.wrap(PRLBZS_fake_script)()
+local function BRSWWKO_fake_script() -- less.LocalScript 
 	local script = Instance.new('LocalScript', less)
 
 	local l = false
@@ -446,16 +446,16 @@ local function CODES_fake_script() -- less.LocalScript
 		end
 	end)
 end
-coroutine.wrap(CODES_fake_script)()
-local function SWGJD_fake_script() -- close.LocalScript 
+coroutine.wrap(BRSWWKO_fake_script)()
+local function YXHN_fake_script() -- close.LocalScript 
 	local script = Instance.new('LocalScript', close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(SWGJD_fake_script)()
-local function VHREE_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(YXHN_fake_script)()
+local function QYNF_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Players = game:GetService("Players")
@@ -515,8 +515,8 @@ local function VHREE_fake_script() -- TextButton.LocalScript
 	-- Connect button click
 	toggleButton.MouseButton1Click:Connect(toggleXP)
 end
-coroutine.wrap(VHREE_fake_script)()
-local function PWGH_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(QYNF_fake_script)()
+local function UYACYUW_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -532,8 +532,8 @@ local function PWGH_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(PWGH_fake_script)()
-local function LORXDO_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(UYACYUW_fake_script)()
+local function BEQHHOU_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local changes = false
@@ -548,7 +548,7 @@ local function LORXDO_fake_script() -- TextButton_3.LocalScript
 				menu:FindFirstChild("Frame"):FindFirstChild("create").Position = UDim2.new(0.5,0,1.17,0)
 				menu:FindFirstChild("Frame"):FindFirstChild("create").Size = UDim2.new(0.8,0,0.2,0)
 			until changes == false
-			menu:FindFirstChild("Frame"):FindFirstChild("serves").Size = UDim2.new(0.97,0,0.946,0)
+			menu:FindFirstChild("Frame"):FindFirstChild("servers").Size = UDim2.new(0.97,0,0.946,0)
 			menu:FindFirstChild("Frame").Position = UDim2.new(0.25,0,0.164,0)
 			script.Parent.Text = "NORMAL HELICOPTER GUI"
 		else
@@ -558,13 +558,13 @@ local function LORXDO_fake_script() -- TextButton_3.LocalScript
 			menu:FindFirstChild("Frame").Size = UDim2.new(0.689,0,0.672,0)
 			menu:FindFirstChild("Frame"):FindFirstChild("create").Position = UDim2.new(0.876,0,0.154,0)
 			menu:FindFirstChild("Frame"):FindFirstChild("create").Size = UDim2.new(0.255,0,0.262,0)
-			menu:FindFirstChild("Frame"):FindFirstChild("serves").Size = UDim2.new(0.735,0,0.946,0)
+			menu:FindFirstChild("Frame"):FindFirstChild("servers").Size = UDim2.new(0.735,0,0.946,0)
 			menu:FindFirstChild("Frame").Position = UDim2.new(0.689,0,0.672,0)
 		end
 	end)
 end
-coroutine.wrap(LORXDO_fake_script)()
-local function QIOVII_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(BEQHHOU_fake_script)()
+local function ZMPZ_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local Players = game:GetService("Players")
@@ -680,8 +680,8 @@ local function QIOVII_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QIOVII_fake_script)()
-local function KIHP_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(ZMPZ_fake_script)()
+local function MRDJERT_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -694,8 +694,8 @@ local function KIHP_fake_script() -- TextButton_5.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KIHP_fake_script)()
-local function ZINHPER_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(MRDJERT_fake_script)()
+local function FMGZG_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	local player = game.Players.LocalPlayer
@@ -741,8 +741,8 @@ local function ZINHPER_fake_script() -- TextButton_6.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZINHPER_fake_script)()
-local function ILDMS_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(FMGZG_fake_script)()
+local function TVZMYVT_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	local oldtext = script.Parent.Text
@@ -757,8 +757,8 @@ local function ILDMS_fake_script() -- TextButton_7.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ILDMS_fake_script)()
-local function UEEUK_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(TVZMYVT_fake_script)()
+local function LJSPQL_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	local Players = game:GetService("Players")
@@ -777,32 +777,40 @@ local function UEEUK_fake_script() -- TextButton_8.LocalScript
 		:WaitForChild("Container")
 		:WaitForChild("Content")
 	
-	StarterGui:SetCore("SendNotification", {
-		Title = "BYPASSING",
-		Duration = 1.3
-	})
-	task.wait(1.3)
-	StarterGui:SetCore("SendNotification", {
-		Title = "BYPASSED!",
-		Duration = 1
-	})
-	task.wait(0.3)
+	script.Parent.MouseButton1Click:Connect(function()
+		StarterGui:SetCore("SendNotification", {
+			Title = "BYPASSING",
+			Duration = 1.3
+		})
+		task.wait(1.3)
+		StarterGui:SetCore("SendNotification", {
+			Title = "BYPASSED!",
+			Duration = 1
+		})
+		task.wait(0.3)
 	
-	-- Loop through children
-	for _, child in ipairs(container:GetChildren()) do
-		if child:IsA("Frame") then
-			local args = { child.Name }
-			claimAchievement:FireServer(unpack(args))
-			
-			StarterGui:SetCore("SendNotification", {
-				Title = "GIVED",
-				Text = child.Name,
-				Duration = 1.3
-			})
-			
-			task.wait(0.5)
+		-- Loop through children
+		for _, child in ipairs(container:GetChildren()) do
+			if child:FindFirstChild("locked") and child:FindFirstChild("locked").Visible == true then
+				local args = { child.Name }
+				claimAchievement:FireServer(unpack(args))
+	
+				StarterGui:SetCore("SendNotification", {
+					Title = "GIVED",
+					Text = child.Name,
+					Duration = 1.3
+				})
+	
+				task.wait(1.3)
+			else
+				StarterGui:SetCore("SendNotification", {
+					Title = "WARNING",
+					Text = child.Name.." IS ALREADY UNLOCKED!",
+					Duration = 1.3
+				})
+			end
 		end
-	end
+	end)
 	
 	-- Send notification when done
 	pcall(function()
@@ -813,8 +821,8 @@ local function UEEUK_fake_script() -- TextButton_8.LocalScript
 		})
 	end)
 end
-coroutine.wrap(UEEUK_fake_script)()
-local function CNOWVOX_fake_script() -- Bar.UIDrag 
+coroutine.wrap(LJSPQL_fake_script)()
+local function XEEM_fake_script() -- Bar.UIDrag 
 	local script = Instance.new('LocalScript', Bar)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -855,20 +863,22 @@ local function CNOWVOX_fake_script() -- Bar.UIDrag
 		end
 	end)
 end
-coroutine.wrap(CNOWVOX_fake_script)()
-local function LWMVOCX_fake_script() -- ScrollingFrame.LocalScript 
+coroutine.wrap(XEEM_fake_script)()
+local function MGOENYW_fake_script() -- ScrollingFrame.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame)
 
 	local UIlist = script.Parent.UIListLayout
 	
 	for _, item in ipairs(game.ReplicatedStorage:WaitForChild("role_showcases"):GetChildren()) do
-		if item.Name ~= "injured" and item.Name ~= "turret_show" then
-		local btn = script.Parent.Parent.CloneB:Clone()
-		btn.Text = item.Name:gsub("'", "") -- remove the `'` from name
-		btn.Name = "Char_"..item.Name
-		btn.Parent = script.Parent
-		btn.MouseButton1Click:Connect(function()
-			script.Parent.Parent.charSelected.Text = btn.Text
+		if item.Name == "injured" or item.Name == "turret_show" then
+		else
+			local btn = script.Parent.Parent.CloneB:Clone()
+			btn.Text = item.Name:gsub("'", "") -- remove the `'` from name
+			btn.Name = "Char_"..item.Name
+			btn.Parent = script.Parent
+			btn.Visible = true
+			btn.MouseButton1Click:Connect(function()
+				script.Parent.Parent.charSelected.Text = btn.Text
 			end)
 			script.Parent.CanvasSize = UDim2.new(0, 0, 0, UIlist.AbsoluteContentSize.Y)
 			script.Parent.CanvasPosition = Vector2.new(0,0)
@@ -876,8 +886,8 @@ local function LWMVOCX_fake_script() -- ScrollingFrame.LocalScript
 	end
 	
 end
-coroutine.wrap(LWMVOCX_fake_script)()
-local function TAYZY_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(MGOENYW_fake_script)()
+local function NHYX_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	local CharSelected = script.Parent.Parent.charSelected
@@ -916,8 +926,8 @@ local function TAYZY_fake_script() -- TextButton_9.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TAYZY_fake_script)()
-local function GFOQ_fake_script() -- Frame.UIDrag 
+coroutine.wrap(NHYX_fake_script)()
+local function LOFESUO_fake_script() -- Frame.UIDrag 
 	local script = Instance.new('LocalScript', Frame)
 
 	-- Made by Real_IceyDev (@lceyDex) --
@@ -958,10 +968,11 @@ local function GFOQ_fake_script() -- Frame.UIDrag
 		end
 	end)
 end
-coroutine.wrap(GFOQ_fake_script)()
-local function CFDLMS_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(LOFESUO_fake_script)()
+local function WEUDW_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	script.Parent.Bar.Position = UDim2.new(0.331, 2,0.064, -55)
+	script.Parent.Frame.Position = UDim2.new(0.095, 0,-0.053, 0)
 end
-coroutine.wrap(CFDLMS_fake_script)()
+coroutine.wrap(WEUDW_fake_script)()
