@@ -39,7 +39,7 @@ Bar.Parent = ScreenGui
 Bar.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Bar.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Bar.BorderSizePixel = 0
-Bar.Position = UDim2.new(0.331062675, 0, 0.0640668496, 0)
+Bar.Position = UDim2.new(0.331, 2, 0.064000003, -55)
 Bar.Size = UDim2.new(0, 247, 0, 25)
 
 TextLabel.Parent = Bar
@@ -326,7 +326,7 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.0817438662, 0, 0.105849579, 0)
+Frame.Position = UDim2.new(0.0953678489, 0, -0.0529247895, 0)
 Frame.Size = UDim2.new(0, 134, 0, 228)
 Frame.Visible = false
 
@@ -404,7 +404,7 @@ charSelected.TextWrapped = true
 
 -- Scripts:
 
-local function RYSV_fake_script() -- ButtonMenu.LocalScript 
+local function LFYIIN_fake_script() -- ButtonMenu.LocalScript 
 	local script = Instance.new('LocalScript', ButtonMenu)
 
 	script.Parent.MenuButton.MouseButton1Click:Connect(function()
@@ -425,51 +425,37 @@ local function RYSV_fake_script() -- ButtonMenu.LocalScript
 		script.Parent.Parent.MiscMenu.Visible = true
 	end)
 end
-coroutine.wrap(RYSV_fake_script)()
-local function XZVXSM_fake_script() -- less.LocalScript 
+coroutine.wrap(LFYIIN_fake_script)()
+local function ZRHYUT_fake_script() -- less.LocalScript 
 	local script = Instance.new('LocalScript', less)
 
-	local newVar = Instance.new("StringValue")
-	newVar.Parent = script.Parent.Parent
-	newVar.Name = "FrameV"
-	newVar.Value = "WelcomeMenu"
-	local toggle = false
-	
-	local function hideFrames()
-		for _,frame in pairs(script.Parent.Parent:GetChildren()) do
-			if frame:IsA("Frame") then
-				frame.Visible = false
-			end
-		end
-	end
+	local l = false
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		if toggle == false then
-			toggle = true
-			script.Parent.Text = "+"
-			hideFrames()
-		else
-			toggle = false
-			script.Parent.Text = "-"
-			for _,showSpeceficFrame in pairs(script.Parent.Parent:GetChildren()) do
-				if showSpeceficFrame.Name == newVar.Value then
-					showSpeceficFrame.Visible = true
-					script.Parent.Parent.ButtonBar.Visible = true
+		if l == false then
+			l = true
+			for _,fr in pairs(script.Parent.Parent:GetChildren()) do
+				if fr:IsA("Frame") then
+					fr.Visible = false
 				end
 			end
+		else
+			l = false
+			script.Parent.Parent.ButtonMenu.Visible = true
+			script.Parent.Parent.WelcomeMenu.Visible = true
 		end
 	end)
 end
-coroutine.wrap(XZVXSM_fake_script)()
-local function VSGUGPL_fake_script() -- close.LocalScript 
+coroutine.wrap(ZRHYUT_fake_script)()
+local function SNGKO_fake_script() -- close.LocalScript 
 	local script = Instance.new('LocalScript', close)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(VSGUGPL_fake_script)()
-local function WMCTZT_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(SNGKO_fake_script)()
+local function NRNKZLU_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Players = game:GetService("Players")
@@ -529,8 +515,8 @@ local function WMCTZT_fake_script() -- TextButton.LocalScript
 	-- Connect button click
 	toggleButton.MouseButton1Click:Connect(toggleXP)
 end
-coroutine.wrap(WMCTZT_fake_script)()
-local function YKIWYS_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(NRNKZLU_fake_script)()
+local function SPAXZ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -546,8 +532,8 @@ local function YKIWYS_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YKIWYS_fake_script)()
-local function ZUDKWZ_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(SPAXZ_fake_script)()
+local function IBLJVC_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local changes = false
@@ -577,23 +563,14 @@ local function ZUDKWZ_fake_script() -- TextButton_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZUDKWZ_fake_script)()
-local function LVHUDCQ_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(IBLJVC_fake_script)()
+local function KGNX_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
 	local Player = Players.LocalPlayer
-	
-	-- GUI Setup
-	local ScreenGui = Instance.new("ScreenGui")
-	ScreenGui.Parent = Player:WaitForChild("PlayerGui")
-	
-	local ToggleButton = Instance.new("TextButton")
-	ToggleButton.Size = UDim2.new(0, 150, 0, 50)
-	ToggleButton.Position = UDim2.new(0, 50, 0, 50)
-	ToggleButton.Text = "START"
-	ToggleButton.Parent = ScreenGui
+	local ToggleButton = script.Parent
 	
 	local toggle = false
 	local billboards = {} -- [player] = billboard
@@ -703,8 +680,8 @@ local function LVHUDCQ_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LVHUDCQ_fake_script)()
-local function LLFP_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(KGNX_fake_script)()
+local function DILE_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -717,27 +694,13 @@ local function LLFP_fake_script() -- TextButton_5.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LLFP_fake_script)()
-local function EBJJI_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(DILE_fake_script)()
+local function XUGXI_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
-	-- Create ScreenGui
 	local player = game.Players.LocalPlayer
 	local playerGui = player:WaitForChild("PlayerGui")
-	
-	local screenGui = Instance.new("ScreenGui")
-	screenGui.Name = "AchievementsToggleGUI"
-	screenGui.Parent = playerGui
-	
-	-- Create Toggle Button
-	local toggleButton = Instance.new("TextButton")
-	toggleButton.Size = UDim2.new(0, 180, 0, 50)
-	toggleButton.Position = UDim2.new(0, 20, 0, 20)
-	toggleButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-	toggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-	toggleButton.Text = "Hide Locked Achievements"
-	toggleButton.Parent = screenGui
-	
+	local toggleButton = script.Parent
 	-- Toggle logic
 	local tog = false
 	
@@ -778,8 +741,8 @@ local function EBJJI_fake_script() -- TextButton_6.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EBJJI_fake_script)()
-local function QOUNHJ_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(XUGXI_fake_script)()
+local function SXWK_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	local oldtext = script.Parent.Text
@@ -794,8 +757,8 @@ local function QOUNHJ_fake_script() -- TextButton_7.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QOUNHJ_fake_script)()
-local function GKTUYN_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(SXWK_fake_script)()
+local function GMXKOLF_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	local Players = game:GetService("Players")
@@ -850,8 +813,50 @@ local function GKTUYN_fake_script() -- TextButton_8.LocalScript
 		})
 	end)
 end
-coroutine.wrap(GKTUYN_fake_script)()
-local function HYMNEDV_fake_script() -- ScrollingFrame.LocalScript 
+coroutine.wrap(GMXKOLF_fake_script)()
+local function XCUV_fake_script() -- Bar.UIDrag 
+	local script = Instance.new('LocalScript', Bar)
+
+	-- Made by Real_IceyDev (@lceyDex) --
+	-- Simple UI dragger (PC Only/Any device that has a mouse) --
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(XCUV_fake_script)()
+local function RGVIUN_fake_script() -- ScrollingFrame.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame)
 
 	local UIlist = script.Parent.UIListLayout
@@ -871,8 +876,8 @@ local function HYMNEDV_fake_script() -- ScrollingFrame.LocalScript
 	end
 	
 end
-coroutine.wrap(HYMNEDV_fake_script)()
-local function BBJCBQ_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(RGVIUN_fake_script)()
+local function BPFNVAF_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	local CharSelected = script.Parent.Parent.charSelected
@@ -911,4 +916,46 @@ local function BBJCBQ_fake_script() -- TextButton_9.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BBJCBQ_fake_script)()
+coroutine.wrap(BPFNVAF_fake_script)()
+local function OSXJPMW_fake_script() -- Frame.UIDrag 
+	local script = Instance.new('LocalScript', Frame)
+
+	-- Made by Real_IceyDev (@lceyDex) --
+	-- Simple UI dragger (PC Only/Any device that has a mouse) --
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(OSXJPMW_fake_script)()
